@@ -195,7 +195,7 @@ RUN   apt-get update && \
 # #       rm -rf /tmp/*;   
 
 WORKDIR /app
-RUN git clone https://github.com/ioi/isolate.git
+RUN git clone https://github.com/MurkaSelebry/isolate.git
 
 WORKDIR /app/isolate
 RUN make isolate

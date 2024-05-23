@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ClayMixers IDE</title>
+    <link rel="stylesheet" href="style3.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="title">CM IDE</div>
+            <div class="options">
+                <select id="language">
+                    <option value="c">C</option>
+                    <option value="cpp">C++</option>
+                    <option value="cs">C#</option>
+                    <option value="elixir">Elixir</option>
+                    <option value="erl">Erlang</option>
+                    <option value="go">Go</option>
+                    <option value="hs">Haskell</option>
+                    <option value="java">Java</option>
+                    <option value="js">JavaScript</option>
+                    <option value="kt">Kotlin</option>
+                    <option value="php">PHP</option>
+                    <option value="py">Python</option>
+                    <option value="rs">Rust</option>
+                    <option value="scala">Scala</option>
+                    <option value="swift">Swift</option>
+                    <option value="ts">TypeScript</option>
+                    <option value="zig">Zig</option>
+                </select>
+                <input type="text" id="compiler-options" placeholder="Compiler options">
+                <input type="text" id="command-arguments" placeholder="Command line arguments">
+                <button id="run-button">Run</button>
+            </div>
+        </header>
+        <main>
+            <div class="editor">
+				<div class="line-numbers" id="editor-line-numbers">
+					<span></span>
+				</div>
+				<textarea id="editor" placeholder="Main.kt"></textarea>
+			</div>
+        </main>
+        <footer>
+            <main>
+                <div class="editorInput">
+				    <div class="line-numbers" id="input-line-numbers">
+                        <span></span>
+				    </div>
+			    <textarea id="input" placeholder="Input"></textarea>
+                </div>
+            </main>
+            <mainOut>
+                <div class="editorOutput">
+				    <div class="line-numbers" id="output-line-numbers">
+                        <span></span>
+				    </div>
+                    <textarea id="output" placeholder="Output" readonly></textarea>
+                </div>
+            </mainOut>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

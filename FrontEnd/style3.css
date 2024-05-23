@@ -1,0 +1,151 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #2e2e2e;
+    color: white;
+}
+
+.title {
+    font-size: 1.2em;
+}
+
+.options {
+    display: flex;
+    align-items: center;
+}
+
+.options select, .options input, .options button {
+    margin-left: 10px;
+    padding: 5px;
+}
+
+main {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    background-color: #1e1e1e;
+}
+/*
+#editor {
+    flex-grow: 1;
+    width: 100%;
+    background-color: #1e1e1e;
+    color: #c5c5c5;
+    border: none;
+    padding: 10px;
+    font-family: monospace;
+    font-size: 1em;
+    resize: none;
+}*/
+
+footer {
+    display: flex;
+}
+
+#input, #output {
+    flex-grow: 1;
+    width: 50%;
+    height: 100px;
+    /*padding: 10px;*/
+    padding: 0;
+    /*border: none;*/
+    resize: none;
+    line-height: 21px;
+    overflow-y: auto;
+    border: 0;
+    outline: none;
+}
+
+#input {
+    background-color: #1e1e1e;
+    color: #c5c5c5;
+}
+
+#output {
+    background-color: #2e2e2e;
+    color: #c5c5c5;
+}
+
+.editorInput, .editorOutput {
+    display: flex;
+    gap: 10px;
+    font-family: monospace;
+    line-height: 21px;
+    border-radius: 2px;
+    padding: 10px;
+    height: 100%;
+    overflow-y: auto;
+    max-height: 800px;
+}
+
+.editorInput {
+    background: #1e1e1e;
+}
+
+.editorOutput {
+    background: #2e2e2e;
+}
+mainOut {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    background-color: #2e2e2e;
+}
+
+
+
+.editor {
+    display: flex;
+    gap: 10px;
+    font-family: monospace;
+    line-height: 21px;
+    background: #282a3a;
+    border-radius: 2px;
+    padding: 20px 10px;
+    height: 100%;
+    overflow-y: auto;
+    max-height: 800px;
+}
+
+.line-numbers {
+    width: 20px;
+    text-align: right;
+    /*height: 500px;*/
+}
+
+.line-numbers span {
+    counter-increment: linenumber;
+}
+
+.line-numbers span::before {
+    content: counter(linenumber);
+    display: block;
+    color: #506882;
+}
+
+#editor {
+    height: 100%;
+    line-height: 21px;
+    overflow-y: hidden;
+    padding: 0;
+    border: 0;
+    background: #282a3a;
+    color: #FFF;
+    width: 100%;
+    outline: none;
+    resize: none;
+}
