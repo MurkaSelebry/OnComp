@@ -1,0 +1,23 @@
+{
+    "name": "Envoi Dev Container",
+    "forwardPorts": [
+        4000
+    ],
+    "build": {
+        "dockerfile": "./Dockerfile.local",
+        "args": {}
+    },
+    "runArgs": [
+        "--privileged"
+    ],
+    "customizations": {
+        "vscode": {
+        "extensions": [
+            "golang.go"
+        ],
+        "settings": {
+            "files.eol": "\n"
+        }
+    }
+    }
+}
