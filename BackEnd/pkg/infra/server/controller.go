@@ -8,6 +8,7 @@ import (
 )
 
 type Controller struct {
+	ide             usecase.UseCase
 	getRuntimes     usecase.UseCase
 	runCode         usecase.UseCase
 	judgeCode       usecase.UseCase
@@ -24,7 +25,6 @@ func (c *Controller) GetRuntimes(ctx *fiber.Ctx) error {
 	if err != nil {
 		return err
 	}
-
 	return ctx.JSON(runtimes)
 }
 

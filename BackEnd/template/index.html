@@ -5,10 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ClayMixers IDE</title>
     <link rel="stylesheet" href="/style/style3.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/kotlin.min.js"></script>
-    <script>hljs.highlightAll();</script>
 </head>
 <body>
     <div class="container">
@@ -44,9 +40,7 @@
 				<div class="line-numbers" id="editor-line-numbers">
 					<span></span>
 				</div>
-                <textarea is="highlighted-code" cols="80" rows="12" tab-size="2" auto-height id="editor" placeholder="Your code here">
-                </textarea>
-				<!--<textarea id="editor" placeholder="Your code here" ></textarea>!-->
+				<textarea id="editor" placeholder="Main.kt"></textarea>
 			</div>
         </main>
         <footer>
@@ -68,12 +62,6 @@
             </mainOut>
         </footer>
     </div>
-    <script src="js/script.js"></script>
-    <script type="module">
-        (async () => {
-            const { default: HighlightedCode } = await import('https://unpkg.com/highlighted-code');
-            HighlightedCode.useTheme('github-dark');
-        })();
-    </script>
+    <script src="/js/script.js"></script>
 </body>
 </html>

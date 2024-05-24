@@ -1,5 +1,5 @@
 {
-    "name": "Envoi Dev Container",
+    "name": "OneComp Dev Container",
     "forwardPorts": [
         4000
     ],
